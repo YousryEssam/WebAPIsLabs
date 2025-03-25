@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Reflection.Metadata.Ecma335;
 using System.Xml.Linq;
@@ -22,6 +23,7 @@ namespace WebAPIsLabs.Controllers
             return Ok(productRepository.GetAll());
         }
 
+        [Authorize]
         [HttpGet("{id:int}")]
         public IActionResult GetById(int id) {
             Product product = productRepository.GetProductCategoryById(id);
