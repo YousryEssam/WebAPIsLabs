@@ -1,0 +1,7 @@
+﻿// JWT.IO allows you to decode, verify and generate JWT.
+https://jwt.io/ 
+
+
+
+// JSON Web Token (JWT) 
+https://www.iana.org/assignments/jwt/jwt.xhtml
